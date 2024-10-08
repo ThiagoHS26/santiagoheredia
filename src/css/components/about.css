@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*Globales CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins',sans-serif;
+}
+/*Variables*/
+:root{
+  --bg-color: #140f16;
+  --second-bg-color: #27252e;
+  --text-color: #fff;
+  --main-color: rgb(255, 153, 0);
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body{
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+section {
+  min-height: 100vh;
+  padding: 10rem 9% 2rem;
+}
+h2{
+  text-transform: uppercase;
+}
+/*Cabecera*/
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header.sticky{
+  border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+.logo{
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor:default;
+}
+span{
+    color: var(--main-color);
+  }
+
+/*Section styles*/
+
+/*About Styles*/
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.about-img img{
+  width: 20vw;
+  margin-right: 3.5rem;
+  border-radius: 1rem;
+  animation: shakeImage 3s ease-in-out infinite;
+}
+
+@keyframes shakeImage {
+  0%{
+    transform: translateX(0);
+
+  }
+  50%{
+    transform: translateX(-2.4rem);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+.about-content h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+.about-content h3 {
+  font-size: 2.6rem;
+}
+.about-content p{
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+/*About me page CSS*/
+.aboutme{
+  background: var(--second-bg-color);
+}
+.aboutme-content{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.aboutme-content .dafo-box{
+  flex: 1 1 30rem;
+  border: 1px solid var(--main-color);
+  padding: 1.3rem;
+}
+.aboutme-content .dafo-box h3{
+  font-size: 2rem;
+  color: var(--main-color)
+}
+.aboutme-content .dafo-box ul{
+  list-style: none;
+}
+.aboutme-content .dafo-box ul li{
+  font-size: 1.6rem;
+}
+
+/*About -> Album*/
+.album {
+  background: var(--second-bg-color);
+}
+.album h2{
+  margin-bottom: 3rem;
+}
+
+.album-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.album-container .album-box{
+  position: relative;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.album-container .album-box img {
+  width: 100%;
+  transition: .2s ease;
+}
+
+.album-container .album-box img:hover{
+  transform: scale(1.1);
+}
+
+/*Footer Styles*/
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+}
+.footer-text p{
+  font-size: 1.6rem;
+}
+.footer-iconTop a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  background: var(--main-color);
+  border-radius: .8rem;
+  transition: .5s ease;
+}
+.footer-iconTop a:hover{
+  box-shadow: 0 0 1rem var(--main-color);
+}
+.footer-iconTop a i {
+  font-size: 2.4rem;
+  color: var(--second-bg-color);
+}
+
+/*BREAKPOINTS*/
+@media (max-width: 1200px){
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 991px){
+  .header {
+    padding: 2rem 3%;
+  }
+  .section {
+    padding: 10rem 3% 2rem;
+  }
+  .footer{
+    padding: 2rem 3%;
+  }
+}
+@media (max-width: 768px){
+  .home {
+    flex-direction: column;
+  }
+  .home-content h3{
+    font-size: 2.6rem;
+  }
+  .home-content h1{
+    font-size: 5rem;
+  }
+  .home-img img{
+    width: 80vw;
+    margin-top: 4rem;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+  .album-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 617px){
+  .album-container{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 450px){
+  html{
+    font-size: 50%;
+  }
+}
+@media (max-width: 365px){
+  .home-img{
+    width: 90vw;
+  }
+  .about-img img {
+    width: 90vw;
+  }
+  .footer {
+    flex-direction: column-reverse;
+  }
+  .footer p {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santiago Heredia | Website</title>
+    <!--Icon-->
+    <link rel="shortcut icon" href="/img/square-h-solid.svg" >
+    <!--Font awesome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--Boostrap 5-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">-->
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!--JS Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Font awesome JS-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/fontawesome.min.js"></script>-->
+</head>
+<body>
+    <!--Header design-->
+    <header class="header">
+        <a href="./index.html" class="logo" style="cursor: pointer;">SH<span>WEBSITE</span></a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">Acerca</a>
+            <a href="#services">Servicios</a>
+            <a href="#portfolio">Portfolio</a>
+            <!--<a href="#partners">Partners</a>-->
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!--Section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hola!</h3>
+            <h1>Me llamo Santiago Heredia</h1>
+            <h3>Y soy desarrollador <span class="multiple-text"></span></h3>
+            <p>Tengo pasión por la tecnología, la computación y el desarrollo de proyectos innovadores. Te invito a conocerme un poco más</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/thiago.net95/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/thiagoh2605/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/santiago-heredia-79b003253/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/ThiagoHS26" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <!--<a href="https://drive.google.com/file/d/1A97708vzYI6tqVhLJkPGL6fo3qrqRII1/view?usp=drive_link" target="_blank" class="btn" download>Descargar CV</a>-->
+        </div>
+        <!--<div class="home-img">
+            <img src="/img/javascript_img.jpg" alt="home_image">
+        </div>-->
+    </section>
+
+    <!--About de section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="https://media.giphy.com/media/USV0ym3bVWQJJmNu3N/giphy.gif" alt="about-image">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>mi</span></h2>
+            <p>
+                Soy ingeniero en Sistemas y Computación, con experiencia en diseño gráfico, programación web y movil. 
+                Me gusta trabajar con startups y personas que quieren llevar sus ideas a otro nivel.
+            </p>
+            <a href="./about.html" class="btn">Leer más</a>
+        </div>
+    </section>
+
+    <!--Services section-->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>servicios</span></h2>
+        <div class="services-container">
+
+            <div class="service-box">
+                <i class="fa-solid fa-pen"></i>
+                <h3>Diseño gráfico</h3>
+                <p>Banners, marketing digital</p>
+                <!--<a href="#services" class="btn">Leer más</a>-->
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desarrollo web</h3>
+                <span class="multiple-text"></span>
+                <p>MEAN y MERN</p>
+                <!--<a href="#services" class="btn">Leer más</a>-->
+            </div>
+
+            <div class="service-box">
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Desarrollo móvil</h3>
+                <p>Java, React Native</p>
+                <!--<a href="#services" class="btn">Leer más</a>-->
+            </div>
+
+        </div>
+    </section>
+
+    <!--Portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Algunos <span>proyectos</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="../img/geomaps_index.PNG" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>Geomaps Security</h4>
+                    <div class="row">
+                        <a href="https://geosecurity.onrender.com" class="btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="./pages/geomaps.html" class="btn" style="margin-left: 3px;"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                    <p>Aplicación web</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="../img/erp_mean_index.PNG" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>Genesys ERP</h4>
+                    <div class="row">
+                        <a href="https://genesys-app.onrender.com" class="btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="./pages/erp-mean.html" class="btn" style="margin-left: 3px;"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                    <p>Aplicación web</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="../img/bienes_raices_index.PNG" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>Bienes Raíces</h4>
+                    <div class="row">
+                        <a href="https://bienes-raices-corp.netlify.app" class="btn" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a href="./pages/webpages.html" class="btn" style="margin-left: 3px;"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                    <p>Página web</p>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="../img/publicidad_mkt.PNG" alt="project_image">
+                <div class="portfolio-layer">
+                    <h4>UX/UI Design</h4>
+                    <div class="row">
+                        <a href="./pages/mkt-digital.html" class="btn" style="margin-left: 3px;"><i class="fa-solid fa-eye"></i></a>
+                    </div>
+                    <p>Diseño digital</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Contacto section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contacto</h2>
+        <form action="https://formsubmit.co/0e9c90bd88e6fde1b08298bcbd2f282b" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Nombres completos" name="name" id="name" required> 
+                <input type="email" placeholder="Correo electrónico" name="email" id="email" required>
+            </div>
+            <div class="input-box">
+                <input type="tel" placeholder="Teléfono" name="phone">
+                <input type="text" placeholder="Asunto" name="subject" id="subject" required>
+            </div>
+            <textarea name="" id="message" cols="30" rows="7" placeholder="Aquí tu mensaje..." name="message" required></textarea>
+            <button id="btnSend" type="submit" class="btn">Enviar</button>
+
+            <input type="hidden" name="_next" value="https://herediasantiago.up.railway.app/">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
+
+    <!--Footer design-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Developed by <span>Santiago Heredia</span>, 2024</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    </footer>
+    <!--Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--JS-->
+<script src="../js/scripts.js"></script>
+</body>
+</html>
